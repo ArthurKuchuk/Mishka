@@ -11,7 +11,7 @@ let path = {
   },
   src: {
     html: [sourceFolder + "/*.html", "!" + sourceFolder + "/_*.html"],
-    css: sourceFolder + "/scss/style.scss",
+    css: [sourceFolder + "/scss/*.scss", "!" + sourceFolder + "/_*.scss"],
     img: sourceFolder + "/img/**/*.{png,svg,jpg}",
     js: sourceFolder + "/js/script.js",
     fonts: sourceFolder + "/fonts/*.{woff,woff2}"
@@ -37,6 +37,7 @@ let { src, dest } = require("gulp"),
   rename = require("gulp-rename"),
   jsmin = require("gulp-uglify-es").default,
   imagemin = require("gulp-imagemin");
+  groupmedia = require("gulp-group-css-media-queries");
 
 function browserSync(params) {
   browsersync.init({
@@ -67,6 +68,7 @@ function css() {
         cascade: true
       })
     )
+    .pipe(groupmedia())
     .pipe(dest(path.build.css))
     .pipe(cssmin())
     .pipe(

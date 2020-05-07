@@ -1,0 +1,269 @@
+
+.header {
+  background-color: #fff;
+}
+.main-nav {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.main-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.main-nav__item-logo {
+  position: relative;
+  margin: auto;
+}
+
+.logo {
+  width: 86px;
+  height: 35px;
+}
+
+
+.main-nav__logo {
+  margin: auto;
+}
+
+.main-nav__menu-toggle {
+  position: absolute;
+  right: 30px;
+  top: calc(50% - 10px);
+}
+
+.menu-toggle__button {
+  border: none;
+  background-color: transparent;
+}
+
+.menu-toggle__button--open {
+  width: 20px;
+  height: 14px;
+  background-image: url(../img/header/menu-open.png);
+}
+.menu-toggle__button--close {
+  width: 21px;
+  height: 20px;
+  background-image: url(../img/header/menu-close.png);
+}
+
+.main-nav__item-cart .main-nav__link {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: -2px;
+
+    display: block;
+    width: 21px;
+    height: 18px;
+
+    background-image: url(../img/header/cart.png);
+  }
+}
+
+.searchform {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    top: -2px;
+
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    background-image: url(../img/header/search.png);
+  }
+}
+
+.search {
+  border: none;
+  width: 100%;
+  padding-left: 45px;
+}
+.main-nav__link {
+  padding-left: 45px;
+}
+
+.main-nav__link,
+.search::placeholder {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #000;
+  text-decoration: none;
+}
+
+.main-nav__sub-list,
+.main-nav__item-free {
+  display: none;
+}
+
+
+
+@media(min-width: 768px) {
+  .header {
+    height: 90px;
+  }
+  .main-nav {
+    height: 90px;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: none;
+  }
+  .main-nav__item {
+    height: 90px;
+    border-bottom: none;
+  }
+
+
+  .main-nav__item-searchform {
+    order: 2;
+  }
+  .main-nav__item-cart {
+    order: 3;
+    width: 263px;
+    padding-left: 45px;
+   justify-content: flex-end;
+  }
+  .main-nav__item-catalog {
+    order: 4;
+  }
+  .main-nav__item-to-order {
+    order: 5;
+  }
+
+
+  .logo {
+    width: 113px;
+    height: 46px;
+  }
+  .main-nav__item-logo {
+    width: 320px;
+    border-right: 1px solid #f5f5f5;
+    margin: 0;
+  }
+  .main-nav__logo {
+    margin-left: 0;
+  }
+
+  .main-nav__menu-toggle {
+    display: none;
+  }
+
+  .searchform {
+    width: 85px;
+    height: 90px;
+    border-right: 1px solid #f5f5f5;
+    
+    &::before {
+      top: 35px;
+      left: 33px;
+    }
+  }
+  
+  .search {
+    display: none;
+  }
+  .search::placeholder {
+    color: transparent;
+  }
+
+  .main-nav__item-cart .main-nav__link {
+    &::before {
+      left: -45px;
+    }
+  }
+
+  .main-nav__link {
+    padding-left: 0;
+  }
+
+  .main-nav__item-catalog {
+    height: 50px;
+    width: 167px;
+    justify-content: left;
+  }
+
+  .main-nav__item-to-order {
+    height: 50px;
+  }
+
+  .main-nav__item-free {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+}
+
+@media(min-width: 1200px) {
+  
+  .main-nav__item-logo {
+    order: 3;
+  }
+  .main-nav__item-searchform {
+    order: 4;
+  }
+  .main-nav__item-cart {
+    order: 5;
+    justify-content: flex-end;
+    width: 269px;
+  }
+  .main-nav__item-catalog {
+    order: 1;
+  }
+  .main-nav__item-to-order {
+    order: 2;
+  }
+
+  .logo {
+    width: 149px;
+    height: 72px;
+  }
+  .main-nav__item-logo {
+    width: 320px;
+    border-right: 1px solid #f5f5f5;
+    margin: 0;
+  }
+  .main-nav__logo {
+    margin-left: auto;
+  }
+  .main-nav__item-catalog {
+    width: 185px;
+    height: 90px;
+    justify-content: left;
+    border-right: 1px solid #f5f5f5;
+  }
+
+  .main-nav__item-to-order {
+    height: 90px;
+    margin-left: 35px;
+  }
+
+  .main-nav__sub-list {
+    display: flex;    
+  }
+  .main-nav__item-arrivals {
+    margin-right: 42px;
+  }
+  .main-nav__item-arrivals,
+  .main-nav__item-sale {
+    margin-top: 19px;
+  }
+}
