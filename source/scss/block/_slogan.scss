@@ -44,7 +44,7 @@
 
     position: absolute;
     right: 38px;
-    top: 15px;
+    top: 10px;
 
     width: 41px;
     height: 62px;
@@ -91,13 +91,14 @@
 
   .product-type {
     flex-direction: row;
-    max-width: 768px;
+    width: 100%;
+    max-width: 668px;
     margin: auto auto 0;
   }
 
   .product-type__item-interior,
   .product-type__item-toys {
-    width: 384px;
+    width: 50%;
   }
   .product-type__text {
     width: 130px;
@@ -112,6 +113,6 @@
   }
   .product-type__item-interior,
   .product-type__item-toys {
-    width: 525px;
+    min-width: 50%;
   }
 }

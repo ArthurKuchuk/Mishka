@@ -94,3 +94,18 @@ img {
 main {
   background-color: #fafafa;
 }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 2px solid #828282;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #444;
+}
+
