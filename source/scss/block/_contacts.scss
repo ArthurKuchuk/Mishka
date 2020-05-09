@@ -1,0 +1,138 @@
+.contacts {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url(../img/about/wave-gray.png);
+  }
+}
+
+.contacts__title {
+  margin-bottom: 35px;
+}
+
+.contacts__email,
+.contacts__address {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #444;
+  line-height: 30px;
+}
+
+.contacts__address-tag,
+.contacts__email-tag {
+  display: block;
+}
+.contacts__email-text,
+.contacts__address-text {
+  width: 190px;
+}
+.contacts__email-text {
+  border-bottom: 1px solid #cbf0e8;
+  height: 28px;
+}
+
+.contacts__map {
+  position: relative;
+  display: block;
+  width: 260px;
+  height: 371px;
+  margin-bottom: 35px;
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 185px;
+    left: calc(50% - 33px);
+
+    width: 67px;
+    height: 100px;
+
+    background-image: url(../img/contacts/map-pin.png);
+  }
+}
+
+.contacts__button {
+  width: 260px;
+}
+
+@media(min-width: 768px) {
+  .contacts-text__wrapper {
+    display: flex;
+  }
+  .contacts__email,
+  .contacts__address {
+    display: flex;
+    width: 50%;
+  }
+  .contacts__email-text {
+    width: 190px;
+    margin-right: auto;
+    margin-left: 25px;
+  }
+  .contacts__address-text {
+    width: 260px;
+  }
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+    margin-left: -50px;
+  }
+  .contacts__button {
+    margin: 0 auto;
+  }
+}
+@media(min-width: 1200px) {
+  .contacts .container {
+    position: relative;
+    padding-left: 175px;
+    padding-top: 133px;
+    &::before {
+      content: "";
+  
+      position: absolute;
+      left: 0px;
+      top: 100px;
+  
+      width: 47px;
+      height: 81px;
+
+      background-image: url(../img/contacts/flag.png);
+    }
+  }
+  .contacts__title {
+    margin-bottom: 60px;
+  }
+  .contacts__map {
+    position: absolute;
+    right: 0;
+    top: 35px;
+
+    width: 525px;
+    height: 457px;
+  }
+  .contacts-text__wrapper {
+    flex-direction: column;
+  }
+  .contacts__address-text {
+    margin-right: auto;
+    margin-left: 27px;
+  }
+  .contacts__button {
+    margin-left: 0;
+  }
+}
