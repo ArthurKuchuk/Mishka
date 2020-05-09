@@ -2,6 +2,7 @@
   position: relative;
   background-color: #fff;
   padding-top: 35px;
+  padding-bottom: 35px;
   &::before {
     content: "";
 
@@ -92,6 +93,7 @@
 @media(min-width: 768px) {
 
   .week-stuff {
+    padding-bottom: 60px;
     &::before {
       display: block;
     }
@@ -141,10 +143,16 @@
     width: 300px;
     margin-top: 50px;
   }
+  .title {
+    font-size: 43px;
+  }
 }
 
 @media (min-width: 1200px) {
   
+  .week-stuff {
+    padding-bottom: 85px;
+  }
   .week-stuff__wrapper {
     padding-left: 175px;
   }
@@ -169,5 +177,8 @@
   }
   .week-stuff__price {
     margin-top: 115px;
+  }
+  .title {
+    font-size: 53px;
   }
 }
