@@ -14,11 +14,11 @@
   <nav class="main-nav header__nav">
     <ul class="main-nav__list header-container">
       <li class="main-nav__item main-nav__item-logo">
-        <a class="logo main-nav__logo " href="#">
+        <a class="logo main-nav__logo" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/header/logo-desktop.png">
             <source media="(min-width: 768px)" srcset="img/header/logo-tablet.png">
-            <img class="logo_img" src="img/header/logo-mobile.png" alt="Логотип 'Mishka'">
+            <img src="img/header/logo-mobile.png" alt="Логотип 'Mishka'">
           </picture>
         </a>
 
@@ -64,17 +64,18 @@
     </ul>
   </nav>
 
-  <span class="main-nav__item-free header-container">Бесплатная доставка по России</span>
+  <span class="header__item-free header-container">Бесплатная доставка по России</span>
 
 </header>
   <main class="main">
     <section class="slogan main__slogan">
   <h2 class="visually-hidden">Заголовок</h2>
-  <b class="slogan__text container">Милые штуки ручной <br> работы для дома</b>
+  <b class="title slogan__title container">Милые штуки ручной <br> работы для дома</b>
   <ul class="product-type slogan__product-type">
     <li class="product-type__item-interior">
-      <span class="product-type__text">Предметы интерьера</span>
+      <span class="product-type__text">Предметы интерьера</span> <!-- Не знаю пока что это ссылки или просто? -->
     </li>
+
     <li class="product-type__item-toys product-type__item--dark">
       <span class="product-type__text">Детские игрушки</span> <!-- Не знаю пока что это ссылки или просто? -->
     </li>
@@ -83,31 +84,31 @@
     <section class="week-stuff">
   <div class="week-stuff__wrapper container">
     <h2 class="week-stuff__title">Товар <br>недели</h2> 
-    <h3 class="title week-stuff__tagline">Вязанные корзинки</h3>
+    <h3 class="title week-stuff__tagline">Вязаные корзинки</h3>
 
     <p class="week-stuff__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
-   
-
     <table class="week-stuff__table">
       <tr class="week-stuff__row">
-        <td class="week-stuff__cell">Цвет:</td>
-        <td class="week-stuff__cell">«Тиффани»/серый</td>
+        <td class="week-stuff__defin">Цвет:</td>
+        <td class="week-stuff__value">«Тиффани»/серый</td>
       </tr>
       <tr class="week-stuff__row">
-        <td class="week-stuff__cell">Диаметр:</td>
-        <td class="week-stuff__cell">25 см</td>
+        <td class="week-stuff__defin">Диаметр:</td>
+        <td class="week-stuff__value">25 см</td>
       </tr>
       <tr class="week-stuff__row">
-        <td class="week-stuff__cell">Высота:</td>
-        <td class="week-stuff__cell">15 см</td>
+        <td class="week-stuff__defin">Высота:</td>
+        <td class="week-stuff__value">15 см</td>
       </tr>
     </table>
+
     <picture class="week-stuff__picture">
       <source media="(min-width: 1200px)" srcset="img/week-stuff/triple-cart-desktop.jpg">
       <source media="(min-width: 768px)" srcset="img/week-stuff/triple-cart-tablet.jpg">
       <img src="img/week-stuff/triple-cart-mobile.jpg" alt="Вязанные корзины">
     </picture>
+    
     <span class="week-stuff__price">Цена: 990 руб.</span>
     <a href="#" class="button week-stuff__button">Заказать</a>
   </div>
@@ -126,6 +127,7 @@
     <section class="recall">
   <div class="container">
     <h2 class="title recall__title">Отзывы</h2>
+    
     <p class="recall__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у
       популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
       стильными, а также набирают больше лайков!</p>
@@ -140,10 +142,12 @@
       <button class="recall__arrow--prev">
         <span class="visually-hidden">Предыдущий отзыв</span>
       </button>
+
       <button class="recall__arrow--next">
         <span class="visually-hidden">Следующий отзыв</span>
       </button>
     </p>
+
     <button class="button recall__button">Написать</button>
   </div>
 </section>
@@ -166,13 +170,14 @@
       <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.jpg">
       <img src="img/contacts/map-mobile.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
     </picture>
-    <button class="button contacts__button">Напишите нам</button>
+    <a href="#" class="button contacts__button">Напишите нам</a>
   </div>
 </section>
   </main>
   <footer class="footer ">
   <div class="container">
     <img class="footer__logo" src="img/header/logo-mobile.png" alt="Логотип">
+
     <div class="footer__social-list">
       <a href="#" class="footer__social-item-i">
         <span class="visually-hidden">Instagram</span>
@@ -184,6 +189,7 @@
         <span class="visually-hidden">Twitter</span>
       </a>
     </div>
+
     <p class="footer__copyright">Макет принадлежит: <br> <a class="footer__copyright-link"
         href="https://htmlacademy.ru/">HTML Academy</a></p>
   </div>
