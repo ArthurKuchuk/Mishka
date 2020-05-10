@@ -1,26 +1,24 @@
 .recall {
-  padding-bottom: 35px;
+  padding-top: 59px;
+  padding-bottom: 45px;
 }
 .recall__title {
-  margin-bottom: 35px;
+  margin-bottom: 24px;
 }
-
 .recall__text {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: #444;
   line-height: 30px;
 }
-
 .recall__author {
   margin-bottom: 35px;
 }
-
 .recall__author-name {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 38px;
 }
 .recall__author-social {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -29,7 +27,7 @@
 }
 .recall__arrows {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 .recall__arrow--prev,
 .recall__arrow--next {
@@ -42,14 +40,13 @@
     content: "";
 
     position: absolute;
-    left: 40px;
+    left: 37px;
     top: 12px;
 
     width: 50px;
     height: 26px;
   }
 }
-
 .recall__arrow--prev::before {
   background-image: url(../img/recall/arrow.png);
 }
@@ -57,35 +54,51 @@
   background-image: url(../img/recall/arrow.png);
   transform: rotateZ(180deg);
 }
-
 .recall__button {
   width: 100%;
 }
-
+////////////////////////////////////////////////////////
 @media(min-width: 768px) {
   .recall {
-    padding-top: 85px;
+    position: relative;
     padding-bottom: 50px;
-    background-image: url(../img/recall/recall-bg-tablet.jpg);
-    background-repeat: no-repeat;
+    padding-top: 50px;
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      top: -27px;
+      z-index: -1;
+
+      width: 350px;
+      height: 457px;
+
+      background-image: url(../img/recall/recall-bg-tablet.jpg);
+    }
   }
   .recall .container {
     position: relative;
+    
   }
   .recall__title {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    margin-left: -3px;
   }
   .recall__text {
     font-size: 17px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .recall__author {
-    line-height: 30px;
+    line-height: 28px;
+  }
+  .recall__author-name {
+    font-size: 18px;
   }
   .recall__arrows {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 5px;
+    bottom: -10px;
     width: 167px;
     height: 26px;
   }
@@ -93,24 +106,51 @@
   .recall__arrow--next {
     border: transparent;
     &::before {
-      left: 16px;
+      left: 17px;
       top: 11px;
     }
   }
   .recall__button {
     position: absolute;
-    top: 0;
+    top: 3px;
     right: 0;
     width: 175px;
   }
 }
-
+////////////////////////////////////////////////////////
 @media(min-width: 1200px) {
   .recall {
     background-position: 100px;
+    padding-top: 45px;
     padding-bottom: 100px;
+    &::before {
+      display: none;
+    }
   }
   .recall .container {
     padding-left: 175px;
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      top: -68px;
+      z-index: -1;
+
+      width: 350px;
+      height: 457px;
+
+      background-image: url(../img/recall/recall-bg-tablet.jpg);
+    }
+  }
+  .recall__text {
+    margin-bottom: 29px;
+    width: 770px;
+  }
+  .recall__button {
+    top: 10px;
+  }
+  .recall__author-name {
+    font-size: 17px;
   }
 }

@@ -1,7 +1,6 @@
 .about {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 55px;
+  padding-top: 35px;
 
   &::before {
     content: "";
@@ -17,24 +16,26 @@
     background-image: url(../img/about/wave-gray.png);
   }
 }
-
+.about__title {
+  margin-bottom: 87px;
+}
 .about__item {
-  margin-top: 100px;
+  margin-bottom: 85px;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 17px;
   color: #000;
 }
-
+////////////////////////////////////////////////////////
 .about__item--flower {
   position: relative;
-
+  width: 190px;
   &::before {
     content: "";
 
     position: absolute;
-    top: -51px;
-    left: 0;
+    top: -55px;
+    left: 7px;
 
     width: 32px;
     height: 38px;
@@ -44,12 +45,12 @@
 }
 .about__item--money{
   position: relative;
-
+  width: 200px;
   &::before {
     content: "";
 
     position: absolute;
-    top: -40px;
+    top: -53px;
     left: 0;
 
     width: 47px;
@@ -60,13 +61,13 @@
 }
 .about__item--heart {
   position: relative;
-
+  width: 200px;
   &::before {
     content: "";
 
     position: absolute;
-    top: -43px;
-    left: 0;
+    top: -48px;
+    left: 7px;
 
     width: 34px;
     height: 27px;
@@ -76,13 +77,13 @@
 }
 .about__item--ball {
   position: relative;
-
+  width: 230px;
   &::before {
     content: "";
 
     position: absolute;
-    top: -50px;
-    left: 0;
+    top: -51px;
+    left: 3px;
 
     width: 35px;
     height: 34px;
@@ -92,13 +93,13 @@
 }
 .about__item--rocket {
   position: relative;
-
+  width: 260px;
   &::before {
     content: "";
 
     position: absolute;
-    top: -36px;
-    left: 0;
+    top: -50px;
+    left: -6px;
 
     width: 55px;
     height: 23px;
@@ -108,13 +109,14 @@
 }
 .about__item--gift {
   position: relative;
-
+  width: 230px;
+  margin-bottom: 0;
   &::before {
     content: "";
 
     position: absolute;
-    top: -45px;
-    left: 0;
+    top: -52px;
+    left: 3px;
 
     width: 33px;
     height: 32px;
@@ -122,10 +124,14 @@
     background-image: url(../img/about/icon-6.png);
   }
 }
-
+////////////////////////////////////////////////////////
 @media(min-width: 768px) {
   .about {
-    padding-bottom: 80px;
+    padding-top: 62px;
+    &::before {
+      height: 17px;
+      background-image: url(../img/about/wave-gray-tablet.png);
+    }
   }
   .about__list {
     display: flex;
@@ -133,18 +139,86 @@
   }
   .about__item {
     width: 50%;
-    padding-right: 85px;
+    margin-bottom: 110px;
+    font-size: 20px;
   }
   .about__title {
-    font-size: 43px;
-    margin-bottom: 35px;
+    margin-bottom: 100px;
+  }
+////////////////////////////////////////////////////////
+  .about__item--flower {
+    order: 1;
+    padding-right: 120px;
+    &::before {
+      left: 10px;
+      top: -52px;
+    }
+  }
+  .about__item--money {
+    order: 3;
+    padding-right: 85px;
+    &::before {
+      top: -51px;
+      left: 3px;
+    }
+  }
+  .about__item--heart {
+    order: 5;
+    padding-right: 100px;
+    &::before {
+      top: -47px;
+      left: 10px;
+    }
+  }
+  .about__item--ball {
+    order: 2;
+    padding-right: 85px;
+    &::before {
+      top: -48px;
+      left: 5px;
+    }
+  }
+  .about__item--rocket {
+    order: 4;
+    padding-right: 0;
+    &::before {
+      top: -48px;
+      left: -5px;
+    }
+  }
+  .about__item--gift {
+    order: 6;
+    padding-right: 85px;
+    &::before {
+      top: -51px;
+      left: 5px;
+    }
   }
 }
+////////////////////////////////////////////////////////
 @media(min-width: 1200px) {
   .about {
-    padding-bottom: 90px;
+    padding-top: 70px;
+    &::before {
+      top: -10px;
+      width: 1050px;
+      height: 23px;
+      margin: 0 auto;
+      background-image: url(../img/about/wave-gray-desktop.png);
+    }
+  }
+  .about__title {
+    margin-left: 110px;
+    margin-bottom: 100px;
   }
   .about .container {
     padding: 0 175px;
+  }
+  ////////////////////////////////////////////////////////
+  .about__item--money {
+    padding-right: 90px;
+  }
+  .about__item--heart {
+    padding-right: 110px;
   }
 }
