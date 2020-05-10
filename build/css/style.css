@@ -1532,6 +1532,7 @@ img {
     width: 350px;
     height: 457px;
     background-image: url(../img/recall/recall-bg-tablet.jpg);
+<<<<<<< HEAD
   }
 
   .recall__text {
@@ -1543,6 +1544,19 @@ img {
     top: 10px;
   }
 
+=======
+  }
+
+  .recall__text {
+    margin-bottom: 29px;
+    width: 770px;
+  }
+
+  .recall__button {
+    top: 10px;
+  }
+
+>>>>>>> 76dc8b3b39549986e88f284c262aefa64a749650
   .recall__author-name {
     font-size: 17px;
   }
