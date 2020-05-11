@@ -716,6 +716,20 @@ img {
   width: 100%;
 }
 
+.recall__arrow--prev:hover,
+.recall__arrow--prev:focus,
+.recall__arrow--next:hover,
+.recall__arrow--next:focus {
+  opacity: .6;
+  cursor: pointer;
+  outline: none;
+}
+
+.recall__arrow--prev:active,
+.recall__arrow--next:active {
+  opacity: .3;
+}
+
 .contacts {
   position: relative;
   padding-top: 48px;
