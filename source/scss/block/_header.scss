@@ -264,3 +264,49 @@
   }
 }
 ////////////////////////////////////////////////////////
+
+//hover, focus, active
+
+.main-nav__link {
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+.main-nav__item-cart .main-nav__link {
+  &:hover,
+  &:focus {
+    &::before {
+      background-image: url(../img/header/cart-green.png);
+      opacity: 1;
+      transition: .3s;
+    }
+  }
+}
+
+.logo {
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.searchform {
+  &:hover,
+  &:focus {
+    &::before {
+      background-image: url(../img/header/search-green.png);
+      transition: .3s;
+    }
+    cursor: pointer;
+  }
+  &:active {
+    opacity: .3;
+  }
+}

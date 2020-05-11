@@ -41,7 +41,10 @@
 .contacts__email-text {
   width: 183px;
   height: 28px;
+  border: none;
+  background-color: transparent;
   border-bottom: 1px solid #cbf0e8;
+
 }
 .contacts__address-text {
   width: 190px;
@@ -50,6 +53,7 @@
 }
 .contacts__map {
   position: relative;
+  left: -28px;
   display: block;
   width: 322px;
   margin: 0 auto;
@@ -80,13 +84,13 @@
       background-image: url(../img/about/wave-gray-tablet.png);
     }
   }
-  .contacts .contacts__wrapper {
+  .contacts .container {
     position: relative;
     &::before {
       content: "";
   
       position: absolute;
-      right: 45px;
+      right: 0;
       top: -16px;
   
       width: 47px;
@@ -120,7 +124,7 @@
   }
   .contacts__map {
     width: 768px;
-    margin: 0 auto 50px;
+    margin: 0 auto 50px -50px;
   }
   .contacts__button {
     width: 230px;
@@ -132,21 +136,22 @@
   .contacts {
     padding-top: 0;
     &::before {
+      top: 23px;
       height: 23px;
       width: 1050px;
       margin: 0 auto;
       background-image: url(../img/about/wave-gray-desktop.png);
     }
   }
-  .contacts .contacts__wrapper {
+ .contacts .container {
     padding-top: 188px;
-    padding-left: 287px;
+    padding-left: 175px;
     padding-bottom: 44px;
     &::before {
       content: "";
   
       position: absolute;
-      left: 178px;
+      left: 65px;
       top: 180px;
   
       width: 47px;
@@ -160,7 +165,8 @@
   }
   .contacts__map {
     position: absolute;
-    right: 116px;
+    right: 0;
+    left: auto;
     top: 120px;
 
     width: 525px;
@@ -174,8 +180,23 @@
     margin-left: 27px;
     margin-bottom: 53px;
   }
+  .contacts__email-text {
+    width: 205px;
+  }
   .contacts__button {
     margin-left: 0;
     width: 230px;
+  }
+}
+////////////////////////////////////////////////////////
+.contacts__email-text {
+  &:hover,
+  &:focus {
+    color: #64c9ba;
+    cursor: pointer;
+    outline: none;
+  }
+  &:active {
+    opacity: .3;
   }
 }

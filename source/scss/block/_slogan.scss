@@ -32,6 +32,7 @@
   min-height: 103px;
   justify-content: flex-start;
   align-items: center;
+  text-decoration: none;
 }
 .product-type__text {
   width: 45%;
@@ -128,7 +129,7 @@
     padding-top: 150px;
     background-size: contain;
   }
-  ////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
   .product-type {
     max-width: 1050px;
     margin-top: 355px;
@@ -137,4 +138,36 @@
   .product-type__item-toys {
     min-width: 50%;
   }
+}
+////////////////////////////////////////////////////////
+//hover, focus, active
+.product-type__item-interior,
+.product-type__item-toys {
+  transition: .3s;
+  &:hover,
+  &:focus {
+    height: 108px;
+  }
+  &:active {
+    .product-type__text {
+      opacity: .3;
+    }
+  }
+}
+@media(min-width: 768px) {
+  .product-type__item-interior,
+.product-type__item-toys {
+  transition: .2s;
+  &:hover,
+  &:focus {
+    margin-top: -5px;
+    height: 125px;
+    transition: .2s;
+  }
+  &:active {
+    .product-type__text {
+      opacity: .3;
+    }
+  }
+}
 }

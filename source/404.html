@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Mishka</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="visually-hidden">Магазин вязаных вещей "Mishka"</h1>
+  
+    <nav class="main-nav header__nav">
+      <ul class="main-nav__list header-container">
+        <li class="main-nav__item main-nav__item-logo">
+          <a class="logo main-nav__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/header/logo-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/header/logo-tablet.png">
+              <img src="img/header/logo-mobile.png" alt="Логотип 'Mishka'">
+            </picture>
+          </a>
+  
+          <p class="menu-toggle main-nav__menu-toggle">
+            <button class="menu-toggle__button menu-toggle__button--open hide">
+              <span class="visually-hidden">Открыть меню навигации</span>
+            </button>
+  
+            <button class="menu-toggle__button menu-toggle__button--close">
+              <span class="visually-hidden">Закрыть меню навигации</span>
+            </button>
+          </p>
+        </li>
+  
+        <li class="main-nav__item main-nav__item-catalog">
+          <a class="main-nav__link mobile-case" href="404.html">Каталог товаров</a>
+        </li>
+  
+        <li class="main-nav__item main-nav__item-to-order">
+          <a class="main-nav__link mobile-case" href="404.html">Вязание на заказ</a>
+        </li>
+  
+        <li class="main-nav__item main-nav__item-searchform">
+          <form class="searchform main-nav__searchform mobile-case" action="#" method="get">
+            <label class="visually-hidden" for="searchform__search">Поиск по сайту</label>
+            <input class="search searchform__search" id="searchform__search" type="search" placeholder="Поиск по сайту">
+          </form>
+        </li>
+  
+        <li class="main-nav__item main-nav__item-cart">
+          <a class="main-nav__link mobile-case" href="404.html">Корзина: пока пуста</a>
+        </li>
+      </ul>
+  
+      <ul class="main-nav__sub-list header-container">
+        <li class="main-nav__item-arrivals">
+          <a class="main-nav__link" href="404.html">Новые поступления</a>
+        </li>
+  
+        <li class="main-nav__item-sale">
+          <a class="main-nav__link" href="404.html">Распродажа</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <span class="header__item-free header-container">Бесплатная доставка по России</span>
+  
+  </header>
+
+  <main class="e404">
+    <div class="e404__container container">
+      <h1 class="e404__title">ERROR 404</h1>
+      <p class="e404__code">code: 404 The page is not found</p>
+      <p class="e404__text">(or is it just not there)</p>
+    </div>
+  </main>
+  @@include("htmlblocks/_footer.html")
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

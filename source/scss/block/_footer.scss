@@ -53,6 +53,7 @@
   text-decoration: none;
   color: #63d1bb;
 }
+////////////////////////////////////////////////////////
 @media(min-width: 768px) {
  
   .footer .container {
@@ -72,6 +73,7 @@
     margin-left: 113px;
   }
 }
+////////////////////////////////////////////////////////
 @media(min-width: 1200px) {
   .footer__logo {
     margin-left: -5px;
@@ -79,4 +81,32 @@
   .footer__social-list {
     margin-left: 100px;
   }
+}
+////////////////////////////////////////////////////////
+//hover, focus, active 
+
+.footer__social-item-i:hover,
+.footer__social-item-i:focus {
+  background-image: url(../img/footer/insta-green.png);
+}
+.footer__social-item-f:hover,
+.footer__social-item-f:focus {
+  background-image: url(../img/footer/fb-green.png);
+  background-repeat: no-repeat;
+}
+.footer__social-item-t:hover,
+.footer__social-item-t:focus {
+  background-image: url(../img/footer/twitter-green.png);
+}
+.footer__social-item-i:active,
+.footer__social-item-f:active,
+.footer__social-item-t:active {
+  opacity: .3;
+}
+
+.footer__copyright-link:hover  {
+  letter-spacing: 3.65px;
+}
+.footer__copyright-link:active {
+  opacity: .3; 
 }

@@ -81,6 +81,25 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #444;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: #444;
+    border-color: #444;
+    cursor: pointer;
+    outline: none;
+  }
+  &:active {
+    color: rgba(255,255,255,.3);
+  }
+}
+////////////////////////////////////////////////////////
+*:hover,
+*:focus {
+  transition: .3s;
+}
+*:active {
+  transition: none;
 }
 ////////////////////////////////////////////////////////
 
